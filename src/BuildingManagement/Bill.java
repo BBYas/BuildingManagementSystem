@@ -11,6 +11,7 @@ import java.util.*;
  * @author flori
  */
 public class Bill {
+    // this is just a test
     private Date dateOfIssue;
     private Date dateOfDue;
     private Date dateOfPayment;
