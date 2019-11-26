@@ -49,9 +49,9 @@ public class Building {
         listOfLevels.add(newLevel);
 
     }
-
+//this is q test
     public void addRoom(int levelNumber,Room room){
-        listOfLevels.get(levelNumber - 1).addRoom(room);
+        //listOfLevels.get(levelNumber - 1).addRoom(room);
     }
     
 
