@@ -122,6 +122,10 @@ public abstract class Room {
     public void setLevelNumber(int levelNumber) {
         this.levelNumber = levelNumber;
     }
+    
+    public int getNumberOfPersons(){
+        return setOfPersons.size();
+    }
 
     public void addAdditionalRoom(String name, double area) {
         additionalRooms.put(name, area);// provide error management for if the name already exists

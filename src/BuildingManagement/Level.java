@@ -11,9 +11,10 @@ import java.util.*;
  */
 public class Level {
     private int levelNumber;
-    private List<Bill> listOfRooms;
+    private List<Room> listOfRooms;
 
     public Level(int levelNumber) {
+        this.listOfRooms = new ArrayList<>();
         this.levelNumber = levelNumber;
     }
 
@@ -21,17 +22,16 @@ public class Level {
         return levelNumber;
     }
 
-    public void setLevelNumber(int levelNumber) {
-        this.levelNumber = levelNumber;
+    public List<Room> getListOfRooms() {
+        return Collections.unmodifiableList(listOfRooms);
     }
 
-    public List<Bill> getListOfRooms() {
-        return listOfRooms;
-    }
-
-    public void setListOfRooms(List<Bill> listOfRooms) {
-        this.listOfRooms = listOfRooms;
+    public void addRoom(Room room){
+        listOfRooms.add(room);
     }
     
+    public  int getNumberOfRooms(){
+        return listOfRooms.size();
+    }
     
 }

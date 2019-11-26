@@ -35,10 +35,9 @@ public class Building {
         buildingID = "BUILD" + globalBuildingID;
         globalBuildingID++;
         numberOflevels = 0;
-        
 
     }
-    
+
     public static void addBuilding(Building building) {
         listOfBuildings.add(building);
     }
@@ -50,10 +49,9 @@ public class Building {
 
     }
 
-    public void addRoom(int levelNumber,Room room){
+    public void addRoom(int levelNumber, Room room) {
         listOfLevels.get(levelNumber - 1).addRoom(room);
     }
-    
 
     public static void removeBuilding(String buildingId) {
         listOfBuildings.removeIf((building) -> {
@@ -105,8 +103,8 @@ public class Building {
     public void addExtra(String extra) {
         buildingExtra.add(extra);
     }
-    
-    public void removeExtra(String extra){
+
+    public void removeExtra(String extra) {
         buildingExtra.remove(extra);
     }
 
@@ -140,13 +138,15 @@ public class Building {
 
     }
 
-     public static Building researchBuildingByName(String name){
-         for (Building building : listOfBuildings) {
-             if(building.getBuildingName().equals(name))
-                 return building;
-         }
-         return null;
-     }
+    public static Building researchBuildingByName(String name) {
+        for (Building building : listOfBuildings) {
+            if (building.getBuildingName().equals(name)) {
+                return building;
+            }
+        }
+        return null;
+    }
     
-     
+    
+
 }
