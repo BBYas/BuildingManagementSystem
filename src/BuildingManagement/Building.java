@@ -51,9 +51,6 @@ public class Building {
 
     public void addRoom(int levelNumber, Room room) {
         listOfLevels.get(levelNumber - 1).addRoom(room);
-//this is q test
-    public void addRoom(int levelNumber,Room room){
-        //listOfLevels.get(levelNumber - 1).addRoom(room);
     }
 
     public static void removeBuilding(String buildingId) {
