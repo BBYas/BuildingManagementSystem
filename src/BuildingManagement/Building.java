@@ -14,11 +14,12 @@ import java.util.Set;
  * @author flori
  */
 public class Building {
-
+//this is another test
     /*TODO funtions to get buildings with available rooms
       also to add and remove rooms in building
       add level
      */
+    int k;
     private static List<Building> listOfBuildings = new ArrayList<>();
     private static int globalBuildingID = 1;
     private int numberOflevels;
